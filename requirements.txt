@@ -1,5 +1,7 @@
 aiogram==3.3.0
 yt-dlp==2024.3.10
-cryptography==41.0.7 --only-binary cryptography
+cryptography==41.0.7 --only-binary :all:
+
+
 
 
