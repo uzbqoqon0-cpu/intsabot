@@ -8,6 +8,10 @@ from yt_dlp.utils import DownloadError
 # ✅ Telegram API token
 API_TOKEN = "7851053334:AAF8AfwRJqseBC_2WGcW181FHaA_z34zfW8"
 
+# ✅ Instagram login/parol
+INSTAGRAM_USERNAME = "Morf_x30"
+INSTAGRAM_PASSWORD = "Shax3010"
+
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 router = Router()
@@ -17,7 +21,7 @@ router = Router()
 async def start(message: Message):
     await message.answer("Salom 👋 Menga Instagram link yuboring, men sizga yuklab beraman 📥")
 
-# Instagram videoni yuklash
+# Instagram yuklab olish
 @router.message()
 async def download_instagram(message: Message):
     url = message.text.strip()
@@ -33,7 +37,8 @@ async def download_instagram(message: Message):
         ydl_opts = {
             "outtmpl": filename,
             "format": "mp4/best",
-            "cookiefile": "cookies.txt"  # browser-dan olingan cookie fayl
+            "username": INSTAGRAM_USERNAME,
+            "password": INSTAGRAM_PASSWORD
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -44,14 +49,14 @@ async def download_instagram(message: Message):
         video = FSInputFile(file_path)
         await message.answer_video(video=video, caption="✅ Yuklab olindi!")
 
-        os.remove(file_path)  # yuborilgandan keyin o‘chiramiz
+        os.remove(file_path)  # yuborilgandan keyin faylni o‘chiramiz
 
     except DownloadError as e:
         await message.answer(f"⚠️ Yuklab bo‘lmadi: {e}")
     except Exception as e:
         await message.answer(f"⚠️ Xatolik: {e}")
 
-# Main funksiyasi
+# Main
 async def main():
     dp.include_router(router)
     await dp.start_polling(bot)
