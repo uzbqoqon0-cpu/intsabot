@@ -6,7 +6,7 @@ from aiogram.types import Message, FSInputFile
 from yt_dlp.utils import DownloadError
 
 # ✅ Telegram API token
-API_TOKEN = "7851053334:AAF8AfwRJqseBC_2WGcW181FHaA_z34zfW8"
+API_TOKEN = "8160786685:AAGtvjo5UHG7OpxwXwvAn1QoWcMgtX6c_lM"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
@@ -58,3 +58,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
