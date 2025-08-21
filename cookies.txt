@@ -1,6 +1,11 @@
+# Netscape HTTP Cookie File
+# This file was generated for yt-dlp usage
+# Format: domain  include_subdomains  path  secure  expiration  name  value
+
 .instagram.com	TRUE	/	TRUE	1790326675	csrftoken	oz2B8PrZNPuMVS5LSFnTHvmbulPAl75b
 .instagram.com	TRUE	/	TRUE	1787302664	sessionid	71164352670%3A5id4geIXUaB1cv%3A10%3AAYfp9V7PWRVYRoThUikk4atLi82opAg1U0VmU6y7vA
 .instagram.com	TRUE	/	TRUE	1763542675	ds_user_id	71164352670
 .instagram.com	TRUE	/	TRUE	1790326672	ps_l	1
 .instagram.com	TRUE	/	TRUE	1790326672	ps_n	1
 .instagram.com	TRUE	/	TRUE	0	rur	"LDC\05471164352670\0541787302675:01fe13b29e241cf67b1d3e2215ba4b43ec255d87ba3303ac10dc995dcc717c64a7189a75"
+
