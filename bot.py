@@ -8,10 +8,6 @@ from yt_dlp.utils import DownloadError
 # ✅ Telegram API token
 API_TOKEN = "7851053334:AAF8AfwRJqseBC_2WGcW181FHaA_z34zfW8"
 
-# ✅ Instagram login/parol
-INSTAGRAM_USERNAME = "Morf_x30"
-INSTAGRAM_PASSWORD = "Shax3010"
-
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 router = Router()
@@ -37,8 +33,7 @@ async def download_instagram(message: Message):
         ydl_opts = {
             "outtmpl": filename,
             "format": "mp4/best",
-            "username": INSTAGRAM_USERNAME,
-            "password": INSTAGRAM_PASSWORD
+            "cookies": "cookies.txt"   # ✅ Cookie fayldan foydalanamiz
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -63,3 +58,9 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
