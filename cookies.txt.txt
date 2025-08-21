@@ -1,0 +1,9 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.chatgpt.com	FALSE	/	FALSE	1755767533	_dd_s	rum=0&expire=1755767279081&logs=1&id=c4bcd844-6ebd-43ab-ba59-3d9bc2071465&created=1755761724019
+.instagram.com	TRUE	/	TRUE	1790326675	csrftoken	oz2B8PrZNPuMVS5LSFnTHvmbulPAl75b
+.instagram.com	TRUE	/	TRUE	1787302664	sessionid	71164352670%3A5id4geIXUaB1cv%3A10%3AAYfp9V7PWRVYRoThUikk4atLi82opAg1U0VmU6y7vA
+.instagram.com	TRUE	/	TRUE	1763542675	ds_user_id	71164352670
+.instagram.com	TRUE	/	TRUE	1790326672	ps_l	1
+.instagram.com	TRUE	/	TRUE	1790326672	ps_n	1
+.instagram.com	TRUE	/	TRUE	0	rur	"LDC\05471164352670\0541787302675:01fe13b29e241cf67b1d3e2215ba4b43ec255d87ba3303ac10dc995dcc717c64a7189a75"
