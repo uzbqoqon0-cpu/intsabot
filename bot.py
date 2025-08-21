@@ -51,16 +51,10 @@ async def download_instagram(message: Message):
     except Exception as e:
         await message.answer(f"⚠️ Xatolik: {e}")
 
-# Main
+# ✅ Asosiy ishga tushirish
 async def main():
     dp.include_router(router)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-    await dp.start_polling(bot)
-
-if __name__ == "__main__":
-    asyncio.run(main())
-
